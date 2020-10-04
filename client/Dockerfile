@@ -1,6 +1,4 @@
-FROM node:10.13
-
-ENV NODE_VERSION 10.13.0
+FROM node
 
 WORKDIR /usr/src/app
 
