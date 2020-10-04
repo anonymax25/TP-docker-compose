@@ -9,11 +9,6 @@ RUN npm install
 
 COPY . .
 
-FROM node:carbon-alpine
-WORKDIR /usr/src/app
-
-COPY --from=builder /usr/src/app .
-
 EXPOSE 8181
 
 CMD [ "npm", "start" ]
